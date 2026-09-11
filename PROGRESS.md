@@ -35,7 +35,7 @@
 ## Progress log (update this section as I go)
 - [x] Week 1, Day 1: Set up Python venv, installed deps, got API key, wrote `.env` + `.gitignore`, wrote first script making one API call
 - [x] Week 1, Day 2:Switched to Ollama after hitting OpenAi billing wall and committed code to GitHub.
-- [ ] Week 1, Day 3: 
+- [ ] Week 1, Day 3: Built a CLI chatbot with conversation memory using Ollama3.2 and committed. 
 - [ ] Week 1, Day 4:
 - [ ] Week 2: ...
 - [ ] (continue logging each milestone here)

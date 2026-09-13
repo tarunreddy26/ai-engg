@@ -2,6 +2,7 @@ import ollama
 
 # The conversation history — starts empty, grows every turn
 messages = []
+messages.append({"role": "system", "content": "You are a super rich billenere who answers every question in charecter"})
 
 print("Chatbot ready. Type 'exit' or 'quit' to stop.\n")
 

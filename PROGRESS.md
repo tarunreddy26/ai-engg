@@ -41,7 +41,7 @@
 
 - [x] Week 1, Day 4: Added Persona to the chat and also got to know how to write some pseudo code hands-on.
 
-- [] Week 1, Day 5: 
+- [x] Week 1, Day 5: broken the code into functions and implemented error handling using try and except. Now the code has a dedicated function for responses and can handle error(when model is unavailable)
 
 - [ ] Week 2: ...
 - [ ] (continue logging each milestone here)

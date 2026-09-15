@@ -1,4 +1,20 @@
 import ollama
+#import sys 
+
+
+#try:
+def fetch_response(messages):
+    response = ollama.chat(
+        model="llama3.2",
+        messages=messages
+    )
+    reply = response["message"]["content"]
+#except ConnectionError:
+    #print('sorry, i cant reach ollama. is it still running')
+#sys.exit()
+
+    return reply
+
 
 # The conversation history — starts empty, grows every turn
 messages = []
@@ -18,15 +34,14 @@ while True:
     # 3. Add the user's message to the history
     messages.append({"role": "user", "content": user_input})
 
-    # 4. Send the WHOLE history so far to the model
-    response = ollama.chat(
-        model="llama3.2",
-        messages=messages
-    )
-
-    # 5. Pull out just the reply text
-    reply = response["message"]["content"]
-    print(f"Bot: {reply}\n")
+    try:
+        reply=fetch_response(messages)
+        print(f"Bot: {reply}\n")
+        messages.append({"role": "assistant", "content": reply})
+    except:
+        print('sorry, i cant reach ollama. is it still running')
+        
+            #print(f"Bot: {reply}\n")
 
     # 6. Add the model's reply to the history too
-    messages.append({"role": "assistant", "content": reply})
+            #messages.append({"role": "assistant", "content": reply})

@@ -43,6 +43,9 @@
 
 - [x] Week 1, Day 5: broken the code into functions and implemented error handling using try and except. Now the code has a dedicated function for responses and can handle error(when model is unavailable)
 
+- [x] Week 1, Day 6: Added persistent memory to the bot using conversation.json to save/load conversations, and added it to .gitignore to keep the conversations private 
+
+
 - [ ] Week 2: ...
 - [ ] (continue logging each milestone here)
 

@@ -33,18 +33,19 @@
 3–5 real, working AI projects of increasing difficulty (single API call → tool-using agent → full RAG app → multi-step agent), each on GitHub with a genuine README, plus a visible public trail on X showing the building/learning process — not just "finished the roadmap," but demonstrated ability to build and explain real things.
 
 ## Progress log (update this section as I go)
-- [x] Week 1, Day 1: Set up Python venv, installed deps, got API key, wrote `.env` + `.gitignore`, wrote first script making one API call
+- [x] Day 1: Set up Python venv, installed deps, got API key, wrote `.env` + `.gitignore`, wrote first script making one API call
 
-- [x] Week 1, Day 2:Switched to Ollama after hitting OpenAi billing wall and committed code to GitHub.
+- [x] Day 2:Switched to Ollama after hitting OpenAi billing wall and committed code to GitHub.
 
-- [x] Week 1, Day 3: Built a CLI chatbot with conversation memory using Ollama3.2 and committed. 
+- [x] Day 3: Built a CLI chatbot with conversation memory using Ollama3.2 and committed. 
 
-- [x] Week 1, Day 4: Added Persona to the chat and also got to know how to write some pseudo code hands-on.
+- [x] Day 4: Added Persona to the chat and also got to know how to write some pseudo code hands-on.
 
-- [x] Week 1, Day 5: broken the code into functions and implemented error handling using try and except. Now the code has a dedicated function for responses and can handle error(when model is unavailable)
+- [x] Day 5: broken the code into functions and implemented error handling using try and except. Now the code has a dedicated function for responses and can handle error(when model is unavailable)
 
-- [x] Week 1, Day 6: Added persistent memory to the bot using conversation.json to save/load conversations, and added it to .gitignore to keep the conversations private 
+- [x] Day 6: Added persistent memory to the bot using conversation.json to save/load conversations, and added it to .gitignore to keep the conversations private 
 
+- [x] Day 7:Ask persona on startup, save conversation after every turn, clean up dead code
 
 - [ ] Week 2: ...
 - [ ] (continue logging each milestone here)

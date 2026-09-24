@@ -18,8 +18,7 @@ def fetch_response(messages):
 
 
 # The conversation history — starts empty, grows every turn
-messages = []
-messages.append({"role": "system", "content": "You are a super rich billionaire who answers every question in character."})
+
 
 print("Chatbot ready. Type 'exit' or 'quit' to stop.\n")
 
@@ -29,7 +28,8 @@ try:
 
 except FileNotFoundError:
     messages=[]
-    messages.append({"role":"system","content":"You are a super rich billenere who answers every question in charecter"})
+    persona=input("describe a persona of your choice")
+    messages.append({"role":"system","content":persona})
     
 while True:
     # 1. Get input from the user
@@ -47,11 +47,12 @@ while True:
         reply=fetch_response(messages)
         print(f"Bot: {reply}\n")
         messages.append({"role": "assistant", "content": reply})
+        with open("conversation.json","w") as f:
+            json.dump(messages,f)
     except:
         print('sorry, i cant reach ollama. is it still running')
 
-with open("conversation.json","w") as f:
-    json.dump(messages,f)
+
         
             #print(f"Bot: {reply}\n")
 
